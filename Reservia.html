@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="Reservia_CSS.css">
+	<script src="https://kit.fontawesome.com/93805b3c5c.js" crossorigin="anonymous"></script>
+	<title>Reservia</title>
+
+</head>
+	<body>
+		<div id="bloc_page_marginleft50">
+			<header>				
+				<div id="logo_nav">
+					<img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\logo\Reservia@3x.png" alt="Logo Reservia" class="logo_reservia"/>
+					<nav>
+						<ul>
+							<li><a href="#" class="nav_hébergement">Hébergements</a></li>
+							<li><a href="#">Activités</a></li>
+							<li><a href="#" class="nav_sinscrire">S'inscrire</a></li>
+						</ul>
+					</nav>
+				</div>
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<p>En plein centre ville ou en pleine nature</p>
+			</header>
+			<div id="bloc_recherche">
+				
+					<form method="post" action="traitement.php">
+						<p><i class="fas fa-map-marker-alt"></i></p>
+						<label for="ville"></label>
+						<input type="search" name="ville" id="ville" placeholder="Marseille, France" maxlenght="15" class="espace_search"/>
+						<input type="submit" value="Rechercher" class="bouton_rechercher"/>
+					</form>
+				
+				<div id="bloc_filtres">
+					<p>Filtres</p>
+					<p><i class="fas fa-money-bill-wave"></i>Économique</p>
+					<p><i class="fas fa-child"></i>Familial</p>
+					<p><i class="fas fa-heart"></i>Romantique</p>
+					<p><i class="fas fa-dog"></i>Animaux autorisés</p>	
+				</div>
+			</div>
+				<div id="tips">
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
+				<section id="bloc_hébergements_populaires">
+					<div id="bloc_hébergements">
+						<h2>Hébergements à marseille</h2>
+						<div id="bloc_1"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge La Cannebière"/></p>
+							<p>Auberge La Cannebière</p>
+							<p>Nuit à partir de 25€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+						<div id="bloc_2"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Hôtel Du Port"/></p>
+							<p>Hôtel Du Port</p>
+							<p>Nuit à partir de 52€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+						</div>
+						<div id="bloc_3"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo Hôtel Les Mouettes"/></p>
+							<p>Hôtel Les Mouettes</p>
+							<p>Nuit à partir de 76€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+						<div id="bloc_4"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo Hôtel De La Mer"/></p>
+							<p>Hôtel De La Mer</p>
+							<p>Nuit à partir de 46€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+						<div id="bloc_5"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo Auberge Le Panier"/></p>
+							<p>Auberge Le Panier</p>
+							<p>Nuit à partir de 23€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+						<div id="bloc_6"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina"/></p>
+							<p>Hôtel Chez Amina</p>
+							<p>Nuit à partir de 96€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+						</div>
+						<div id="Affichage_complet"><a href="#">
+							<p>Afficher plus</p></a>
+					</div>
+					<div id="bloc_populaires">
+						<h2>Les plus populaires</h2>
+						<p><i class="fas fa-chart-line"></i></p>
+						<div id="bloc_populaire_1"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel Le Soleil Du Matin"/></p>
+							<p>Hôtel Le Soleil Du Matin</p>
+							<p>Nuit à partir de 128€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></a>
+						</div>
+						<div id="bloc_populaire_2"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au Coeur De L'eau Chambres D'hôtes"/></p>
+							<p>Au Coeur De L'eau Chambres D'hôtes</p>
+							<p>Nuit à partir de 71€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+						<div id="bloc_populaire_3"><a href="#">
+							<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo Hôtel Tout Bleu Et Blanc"/></p>
+							<p>Hôtel Tout Bleu Et Blanc</p>
+							<p>Nuit à partir de 68€</p>
+							<p class="logos_etoiles_bleues"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star gris"></i></p></a>
+						</div>
+					</div>
+				</section>
+				<section id="bloc_activités">
+						<h2>Activités à Marseille</h2>
+							<div id="bloc_activités_1"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Porc"/></p>
+								<p>Vieux Port</p></a>
+							</div>
+							<div id="bloc_activités_2">
+								<div id="bloc_activités_2a"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort De Pomègues"/></p>
+								<p>Fort De Pomègues</p></a>
+								</div>
+								<div id="bloc_activités_2b"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo des Îles Du Frioul"/></p>
+								<p>Îles Du Frioul</p></a>
+								</div>
+							</div>
+							<div id="bloc_activités_3"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Parc National Des Calanques"/></p>
+								<p>Parc National Des Calanques</p></a>
+							</div>
+							<div id="bloc_activités_4">
+								<div id="bloc_activités_4a"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-De-La-Garde"/></p>
+								<p>Notre-Dame-De-La-Garde</p></a>
+								</div>
+								<div id="bloc_activités_4b"><a href="#">
+								<p><img src="C:\Users\Gogolito\OpenClassrooms\Projet_2\Projet\Ressources\images\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du Parc Longchamp"/></p>
+								<p>Parc Longchamp</p></a>
+								</div>
+							</div>
+
+				</section>
+		</div>	
+			<footer>
+				<div id="bloc_footer_1">
+					<h4><a href="#">A propos</a></h4>
+						<p><a href="#">Fonctionnement du site</a></p>
+						<p><a href="#">Conditions générales de vente</a></p>
+						<p><a href="#">Données et confidentialité</a></p>
+				</div>
+				<div id="bloc_footer_2">
+					<h4><a href="#">Nos hébergements</a></h4>
+						<p><a href="#">Charte qualité</a></p>
+						<p><a href="#">Soumettre votre hôtel</a></p>
+				</div>
+				<div id="bloc_footer_3">
+					<h4><a href="#">Assistance</a></h4>
+						<p><a href="#">Centre d'aide</a></p>
+						<p><a href="#">Nous contacter</a></p>
+				</div>
+			</footer>
+		
+	</body>
+</html>

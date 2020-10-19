@@ -1,0 +1,116 @@
+@font-face {
+    font-family:Raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+body
+{
+	font-family: Raleway;
+}
+.logo_reservia
+{
+	width:100px;
+	height:auto;
+}
+#bloc_page_marginleft50
+{
+	margin-left:50px;
+	margin-right:50px;
+}
+.header
+{
+
+}
+#logo_nav
+{
+	display: flex;
+	justify-content: space-between;
+}
+nav ul
+{
+	display:flex;
+	flex-direction:row;
+}
+nav li
+{
+	margin-right:100px;
+
+}
+a
+{
+	text-decoration: none;
+	color:black;
+}
+li
+{
+	list-style-type: none;
+}
+.nav_hébergement,.nav_sinscrire
+{
+	color:#0065FC;
+}
+
+.fas.fa-map-marker-alt,.fas.fa-chart-line
+{
+	color:black;
+}
+.fas
+{
+	color:#0065FC;
+}
+.fas.fa-star.gris
+{
+	color:#d9d9d9;
+}
+#bloc_recherche
+{
+	display: flex;
+	flex-direction: column;
+}
+form
+{
+	display:flex;
+	border:#f2f2f2 solid 1px;
+}
+.bouton_rechercher,.espace_search
+{
+	border-style: none;
+}
+
+#bloc_filtres
+{
+	display: flex;
+	justify-content: space-between;
+	
+	width:70%;
+	height:auto;
+	font-weight: bold;
+}
+.fas.fa-money-bill-wave,.fas.fa-child,.fas.fa-heart,.fas.fa-dog
+{
+	margin-right: 20px;
+}
+
+#tips
+{
+
+}
+#bloc_hébergements_populaires
+{
+
+}
+#bloc_hébergements
+{
+
+}
+#bloc_populaires
+{
+
+}
+#bloc_activités
+{
+
+}
+.footer
+{
+
+}
