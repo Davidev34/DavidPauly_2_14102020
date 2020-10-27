@@ -2,17 +2,24 @@
     font-family:Raleway;
     src: url(Raleway-Regular.ttf);
 }
+@media screen and (max-width:992px)
+{
+	body
+	{
+		background-color: #f2f2f2;
+	}
+}
 body
 {
-	font-family: Raleway;	
+	font-family:Raleway;	
 }
 section
 {
-	line-height: 0.5em;
+	line-height:0.5em;
 }
 .gras
 {
-	font-weight: bold;
+	font-weight:bold;
 }
 .logo_reservia
 {
@@ -25,8 +32,8 @@ section
 }
 #logo_nav
 {
-	display: flex;
-	justify-content: space-between;
+	display:flex;
+	justify-content:space-between;
 }
 nav ul
 {
@@ -39,12 +46,12 @@ nav li
 }
 a
 {
-	text-decoration: none;
+	text-decoration:none;
 	color:black;
 }
 li
 {
-	list-style-type: none;
+	list-style-type:none;
 }
 .nav_hébergement,.nav_sinscrire
 {
@@ -101,16 +108,16 @@ form
 }
 .espace_search
 {
-	border-style: none;
-	font-weight: bold;
+	border-style:none;
+	font-weight:bold;
 }
 .bouton_rechercher
 {
-	border-style: none;
+	border-style:none;
 	background-color: #0065FC;
 	color:white;
 	border-radius:0px 10px 10px 0px;
-	font-weight: bold;
+	font-weight:bold;
 }
 
 #bloc_filtres
@@ -118,7 +125,7 @@ form
 	display: flex;
 	justify-content: space-between;
 	width:65%;	
-	font-weight: bold;
+	font-weight:bold;
 	margin-top:20px;
 	margin-bottom:20px;
 }
@@ -129,19 +136,19 @@ form
 	border:solid #d9d9d9 2px;
 	border-radius:30px;
 	padding-right:20px;
-	transform: scale(1);
-	transition: all 300ms;
+	transform:scale(1);
+	transition:all 300ms;
 }
 .border_filter:hover
 {
 	transform: scale(1.15);
 	color:#ffffff;
 	background-color:#d9d9d9;
-	box-shadow: 6px 6px 6px #f2f2f2;
+	box-shadow:6px 6px 6px #f2f2f2;
 }
 .fas.fa-money-bill-wave,.fas.fa-child,.fas.fa-heart,.fas.fa-dog
 {
-	margin-right: 20px;
+	margin-right:20px;
 	background-color: #DEEBFF;
 	border-radius:20px;
 	padding: 12px;
@@ -149,22 +156,22 @@ form
 
 #tips
 {
-	display: inline-block;
+	display:inline-block;
 }
 .icon_tips_text
 {
-	margin-left: 10px;
+	margin-left:10px;
 }
 .fas.fa-info-circle
 {
 	color:white;
 	background-color:#0065FC;
-	border-radius: 10px;
+	border-radius:10px;
 }
 #bloc_hébergements_populaires
 {
 	display:flex;
-	justify-content: space-between;	
+	justify-content:space-between;	
 }
 #bloc_hébergements
 {
@@ -179,20 +186,20 @@ h2
 }
 h3
 {
-	font-size: 1.3em;
+	font-size:1.3em;
 }
 #bloc_hébergements_photos
 {
 	display:flex;
-    flex-wrap: wrap;
-	justify-content: space-around;	
+    flex-wrap:wrap;
+	justify-content:space-around;	
 }
 .Titre_heber_photos
 {
 	padding-left:40px;
 	padding-top:30px;
 }
-#bloc_1,#bloc_2,#bloc_3,#bloc_4,#bloc_5,#bloc_6
+.bloc_1
 {
 	width:25%;
     height:auto;
@@ -200,14 +207,14 @@ h3
     padding:5px;
     border-radius:20px;
     margin-top:30px;
-	box-shadow: 6px 6px 6px #d8d8d8;
-	transform: scale(1);
-	transition: all 400ms;
+	box-shadow:6px 6px 6px #d8d8d8;
+	transform:scale(1);
+	transition:all 400ms;
 }
-#bloc_1:hover,#bloc_2:hover,#bloc_3:hover,#bloc_4:hover,#bloc_5:hover,#bloc_6:hover
+.bloc_1:hover
 {
-	transform: scale(1.05);	
-	box-shadow: 6px 6px 6px #aeaeae;
+	transform:scale(1.05);	
+	box-shadow:6px 6px 6px #aeaeae;
 }
 .imageheberg_1
 {
@@ -216,56 +223,56 @@ h3
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
 }
-#text_tarif_stars
+.text_tarif_stars
 {
-    padding-left:16px;
+	padding-left:16px;
 }
 #Afficher_plus
 {
 	margin-left:40px;
 	padding-top:20px;
 	padding-bottom:20px;
-	font-weight: bold;
+	font-weight:bold;
 }
 #bloc_populaires
 {
 	display:flex;
-	flex-direction: column;
-	justify-content: space-around;
+	flex-direction:column;
+	justify-content:space-around;
 	width:33%;
 	border-radius:20px;
 	background-color: #f2f2f2;	
 }
 #Titre_logo_pop
 {
-	display: flex;
+	display:flex;
 	justify-content: space-between;
 	width:80%;
 	margin-left:52px;	
 }
 .logos_etoiles_bleues_pop
 {
-	position: absolute;
-	bottom: 0;
-	left: 16px;
+	position:absolute;
+	bottom:0;
+	left:16px;
 }
-#bloc_populaire_1,#bloc_populaire_2,#bloc_populaire_3
+.bloc_populaire_1
 {	
 	display:flex;
     width:85%;
 	height:auto;
 	background-color:#ffffff;
-	margin: auto;
+	margin:auto;
 	padding:5px;
 	border-radius:20px;
-	box-shadow: 6px 6px 6px #d8d8d8;
-	transform: scale(1);
-	transition: all 300ms;
+	box-shadow:6px 6px 6px #d8d8d8;
+	transform:scale(1);
+	transition:all 300ms;
 }
-#bloc_populaire_1:hover,#bloc_populaire_2:hover,#bloc_populaire_3:hover
+.bloc_populaire_1:hover
 {
-	transform: scale(1.10);
-	box-shadow: 6px 6px 6px #aeaeae;
+	transform:scale(1.10);
+	box-shadow:6px 6px 6px #aeaeae;
 }
 .imagepop_1
 {
@@ -274,9 +281,9 @@ h3
     object-fit:cover;
     border-radius:20px 0px 0px 20px;
 }
-#text_tarif_stars_pop
+.text_tarif_stars_pop
 {
-	position: relative;
+	position:relative;
     padding-left:16px;
 }
 #bloc_activités
@@ -305,36 +312,36 @@ h3
 }
 #bloc_activités_1,#bloc_activités_2a,#bloc_activités_2b,#bloc_activités_3,#bloc_activités_4a,#bloc_activités_4b
 {
-	transform: scale(1);
-	transition: all 400ms;
+	transform:scale(1);
+	transition:all 400ms;
 }
 #bloc_activités_1:hover,#bloc_activités_2a:hover,#bloc_activités_2b:hover,#bloc_activités_3:hover,#bloc_activités_4a:hover,#bloc_activités_4b:hover
 {
-	transform: scale(1.02);
-	box-shadow: 6px 6px 6px #d8d8d8;
+	transform:scale(1.02);
+	box-shadow:6px 6px 6px #d8d8d8;
 }
 #bloc_activités_1,#bloc_activités_3
 {
-	box-shadow: 6px 6px 6px #f2f2f2;
+	box-shadow:6px 6px 6px #f2f2f2;
 }
 #bloc_activités_1,#bloc_activités_2,#bloc_activités_3
 {
-	margin-right: 25px;
+	margin-right:25px;
 }
 #bloc_activités_2,#bloc_activités_3,#bloc_activités_4
 {
-	margin-left: 25px;
+	margin-left:25px;
 }
 #bloc_activités_2,#bloc_activités_4
 {
 	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction:column;
+	justify-content:space-between;
 }
 #bloc_activités_2a,#bloc_activités_2b,#bloc_activités_4a,#bloc_activités_4b
 {
 	border-radius:25px;
-	box-shadow: 6px 6px 6px #f2f2f2;
+	box-shadow:6px 6px 6px #f2f2f2;
 }
 #bloc_activités_2a
 {
@@ -391,16 +398,16 @@ footer
 {
 	display:flex;
 	background-color: #f2f2f2;
-	margin-top: 60px;
-	padding-top: 40px;
+	margin-top:60px;
+	padding-top:40px;
 }
 footer p
 {
-	line-height: 0.7em;
+	line-height:0.7em;
 }
 #bloc_footer_1,#bloc_footer_2,#bloc_footer_3
 {
 	width:33%;
 	height:auto;
-	margin-left: 50px;
+	margin-left:50px;
 }
