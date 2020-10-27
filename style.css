@@ -9,7 +9,7 @@
 		background-color: #f2f2f2;
 	}
 }
-body
+body,#ville::placeholder,.bouton_rechercher
 {
 	font-family:Raleway;	
 }
@@ -53,11 +53,11 @@ li
 {
 	list-style-type:none;
 }
-.nav_hébergement,.nav_sinscrire
+.nav_sinscrire
 {
-	color:#0065FC;
+    color:#0065FC;
+    font-weight:bold;
 }
-
 .nav_hébergement,.nav_sinscrire,.nav_activités
 {
 	padding-left:25%;
@@ -68,9 +68,14 @@ li
 {
 	font-weight:bold;
 }
-.nav_hébergement:hover,.nav_sinscrire:hover,.nav_activités:hover
+.nav_hébergement:hover,.nav_activités:hover
 {
-	border-top:#0065FC solid 3px;
+    border-top:#0065FC solid 3px;
+    color:#0065FC;
+}
+.nav_sinscrire:hover
+{
+    border-top:#0065FC solid 3px;
 }
 .fas.fa-chart-line
 {
@@ -102,11 +107,16 @@ form
 	display:flex;
 	justify-content:space-between;
 	width:20%;
-	height:35px;
+    height:35px;
 	border:solid #f2f2f2 2px;
 	border-radius:30px;
 }
-.espace_search
+#ville::placeholder
+{
+    color:#000000;
+    font-weight:bold;
+}
+#ville
 {
 	border-style:none;
 	font-weight:bold;
@@ -117,7 +127,9 @@ form
 	background-color: #0065FC;
 	color:white;
 	border-radius:0px 10px 10px 0px;
-	font-weight:bold;
+    font-weight:bold;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 #bloc_filtres
@@ -135,7 +147,7 @@ form
 	background-color: #ffffff;
 	border:solid #d9d9d9 2px;
 	border-radius:30px;
-	padding-right:20px;
+    padding-right:15px;
 	transform:scale(1);
 	transition:all 300ms;
 }
@@ -148,7 +160,7 @@ form
 }
 .fas.fa-money-bill-wave,.fas.fa-child,.fas.fa-heart,.fas.fa-dog
 {
-	margin-right:20px;
+	margin-right:15px;
 	background-color: #DEEBFF;
 	border-radius:20px;
 	padding: 12px;
@@ -162,11 +174,11 @@ form
 {
 	margin-left:10px;
 }
-.fas.fa-info-circle
+.fas.fa-info
 {
-	color:white;
-	background-color:#0065FC;
-	border-radius:10px;
+    border:solid #f2f2f2 2px;
+    padding:5px 10px;
+    border-radius:20px;
 }
 #bloc_hébergements_populaires
 {
@@ -186,7 +198,7 @@ h2
 }
 h3
 {
-	font-size:1.3em;
+	font-size:1.5em;
 }
 #bloc_hébergements_photos
 {
@@ -197,7 +209,7 @@ h3
 .Titre_heber_photos
 {
 	padding-left:40px;
-	padding-top:30px;
+    padding-top:30px;
 }
 .bloc_1
 {
@@ -234,6 +246,10 @@ h3
 	padding-bottom:20px;
 	font-weight:bold;
 }
+.afficher_plus
+{
+    font-size:1.3em;
+}
 #bloc_populaires
 {
 	display:flex;
@@ -241,14 +257,18 @@ h3
 	justify-content:space-around;
 	width:33%;
 	border-radius:20px;
-	background-color: #f2f2f2;	
+	background-color: #f2f2f2;
 }
 #Titre_logo_pop
 {
 	display:flex;
 	justify-content: space-between;
 	width:80%;
-	margin-left:52px;	
+    margin-left:52px;
+}
+.fas.fa-chart-line
+{
+    font-size:1.5em;
 }
 .logos_etoiles_bleues_pop
 {
