@@ -2,13 +2,6 @@
     font-family:Raleway;
     src: url(Raleway-Regular.ttf);
 }
-@media screen and (max-width:992px)
-{
-	body
-	{
-		background-color: #f2f2f2;
-	}
-}
 body,#ville::placeholder,.bouton_rechercher
 {
 	font-family:Raleway;	
@@ -23,46 +16,52 @@ section
 }
 .logo_reservia
 {
+	flex:2;
+}
+.héber_activ
+{
+	display:flex;
+	justify-content:space-between;
+	
+	width:350px;
+	
+}
+.size_reservia
+{
 	width:100px;
 }
 #bloc_page_marginleft50
 {
 	margin-left:50px;
 	margin-right:50px;
+	border:black 2px solid;
 }
 #logo_nav
 {
 	display:flex;
 	justify-content:space-between;
-}
-nav ul
-{
-	display:flex;
-	flex-direction:row;
-}
-nav li
-{
-	margin-right:100px;
+	align-items:center;
+	margin-top:10px;
 }
 a
 {
 	text-decoration:none;
 	color:black;
 }
-li
+.color_sinscrir
 {
-	list-style-type:none;
+	color:#0065FC;
+	font-weight:bold;
 }
-.nav_sinscrire
+.nav_hébergement,.nav_activités
 {
-    color:#0065FC;
-    font-weight:bold;
+	width:50%;
+	text-align:center;
 }
 .nav_hébergement,.nav_sinscrire,.nav_activités
 {
-	padding-left:25%;
-	padding-right:25%;
 	padding-top:21px;
+	border-top:#FFFFFF solid 3px;
 }
 .gras
 {
@@ -70,8 +69,11 @@ li
 }
 .nav_hébergement:hover,.nav_activités:hover
 {
-    border-top:#0065FC solid 3px;
-    color:#0065FC;
+	border-top:#0065FC solid 3px;
+}
+.color_hébergement:hover,.color_activités:hover
+{
+	color:#0065FC;
 }
 .nav_sinscrire:hover
 {
@@ -430,4 +432,43 @@ footer p
 	width:33%;
 	height:auto;
 	margin-left:50px;
+}
+@media screen and (max-width:1024px)
+{
+	body
+	{
+		width:auto;
+	}
+	#logo_nav
+	{
+		flex-wrap:wrap;
+		width:100%;
+		margin-top:10px;	
+	}
+	.logo_reservia
+	{
+		width:50%;
+		order:1;
+	}
+	
+	.nav_sinscrire
+	{
+		width:50%;
+		height:29px;
+		order:2;
+		text-align:right;
+	}
+	.héber_activ
+	{
+		width:100%;
+		order:3;	
+	}
+
+	#bloc_page_marginleft50
+	{
+		margin:0px;
+	}
+
+
+
 }
