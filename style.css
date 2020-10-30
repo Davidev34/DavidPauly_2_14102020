@@ -6,9 +6,20 @@ body,#ville::placeholder,.bouton_rechercher
 {
 	font-family:Raleway;	
 }
+body
+{
+	margin:0px;
+}
 section
 {
 	line-height:0.5em;
+	margin-left:50px;
+	margin-right:50px;
+}
+header
+{
+	margin-left:50px;
+	margin-right:50px;
 }
 .gras
 {
@@ -22,31 +33,28 @@ section
 {
 	display:flex;
 	justify-content:space-between;
-	
 	width:350px;
-	
 }
 .size_reservia
 {
 	width:100px;
 }
-#bloc_page_marginleft50
-{
-	margin-left:50px;
-	margin-right:50px;
-	border:black 2px solid;
-}
 #logo_nav
 {
 	display:flex;
 	justify-content:space-between;
-	align-items:center;
-	margin-top:10px;
 }
 a
 {
 	text-decoration:none;
 	color:black;
+}
+.nav_sinscrire
+{
+	width:175px;
+	text-align:center;
+	margin-top:0px;
+	line-height: 4em;
 }
 .color_sinscrir
 {
@@ -57,10 +65,11 @@ a
 {
 	width:50%;
 	text-align:center;
+	margin-top:0px;
+	line-height: 4em;
 }
 .nav_hébergement,.nav_sinscrire,.nav_activités
 {
-	padding-top:21px;
 	border-top:#FFFFFF solid 3px;
 }
 .gras
@@ -87,9 +96,14 @@ a
 {
 	color:black;
 	background-color: #f2f2f2;
-	border-radius:20px 0px 0px 20px;
-	padding:10px;
-	margin: 0px;
+	border-radius:13px 0px 0px 13px;
+	padding:17px;
+	margin:0px;
+}
+.fas.fa-search
+{
+	color:#0065FC;
+	font-size:0.1em;
 }
 .fas
 {
@@ -101,17 +115,19 @@ a
 }
 #bloc_recherche
 {
-	width:100%;
+	width:80%;
 	height:auto;
+	margin-left:50px;
+	margin-right:50px;
 }
 form
 {
 	display:flex;
 	justify-content:space-between;
 	width:20%;
-    height:35px;
+    height:50px;
 	border:solid #f2f2f2 2px;
-	border-radius:30px;
+	border-radius:15px;
 }
 #ville::placeholder
 {
@@ -128,7 +144,7 @@ form
 	border-style:none;
 	background-color: #0065FC;
 	color:white;
-	border-radius:0px 10px 10px 0px;
+	border-radius:0px 15px 15px 0px;
     font-weight:bold;
     padding-left: 13px;
     padding-right: 13px;
@@ -138,7 +154,7 @@ form
 {
 	display: flex;
 	justify-content: space-between;
-	width:65%;	
+	width:75%;	
 	font-weight:bold;
 	margin-top:20px;
 	margin-bottom:20px;
@@ -167,10 +183,11 @@ form
 	border-radius:20px;
 	padding: 12px;
 }
-
 #tips
 {
 	display:inline-block;
+	margin-left:50px;
+	margin-right:50px;
 }
 .icon_tips_text
 {
@@ -190,7 +207,7 @@ form
 #bloc_hébergements
 {
 	width:65%;
-    height:656px;
+	height:656px;
     background-color: #f2f2f2;
     border-radius:20px;
 }
@@ -312,6 +329,8 @@ h3
 {
 	height:600px;
 	margin-top:40px;
+	margin-left:50px;
+	margin-right:50px;
 }
 #bloc_photos_activités
 {
@@ -427,7 +446,11 @@ footer p
 {
 	line-height:0.7em;
 }
-#bloc_footer_1,#bloc_footer_2,#bloc_footer_3
+footer p:hover
+{
+	font-weight:bold;
+}
+.bloc_footer_1
 {
 	width:33%;
 	height:auto;
@@ -437,38 +460,249 @@ footer p
 {
 	body
 	{
+		display:flex;
+		flex-direction: column;
 		width:auto;
+		margin:0px;
+	}
+	header
+	{
+		margin-left:0px;
+		margin-right:0px;
 	}
 	#logo_nav
 	{
 		flex-wrap:wrap;
 		width:100%;
-		margin-top:10px;	
+		margin-top:10px;
+		
 	}
 	.logo_reservia
 	{
 		width:50%;
 		order:1;
+		margin-left:20px;
 	}
 	
 	.nav_sinscrire
 	{
-		width:50%;
+		width:30%;
 		height:29px;
 		order:2;
 		text-align:right;
+		margin-right:20px;
+		margin-top:10px;
 	}
 	.héber_activ
 	{
 		width:100%;
-		order:3;	
+		order:3;
 	}
-
-	#bloc_page_marginleft50
+	.nav_sinscrire:hover
 	{
-		margin:0px;
+		border-top:#ffffff solid 3px;
 	}
-
-
-
+	.nav_hébergement,.nav_activités
+	{
+		padding-top:0px;
+		padding-bottom:15px;
+		border-bottom:#f2f2f2 solid 3px;
+	}
+	.nav_hébergement:hover,.nav_activités:hover
+	{
+		border-top:#ffffff solid 3px;
+		border-bottom:#0065FC solid 3px;
+	}
+	.titre_soustitre
+	{
+		text-align:center;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	h2
+	{
+		padding:0px;
+	}
+	#bloc_recherche
+	{
+		width:90%;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	form
+	{
+		width:100%;
+		height:auto;
+	}
+	.fas.fa-search
+	{
+		color:#ffffff;
+		font-size:1em;
+		padding:0px 5px;
+	}
+	.Value_mot
+	{
+		display: none;
+	}
+	.bouton_rechercher
+	{
+	border-radius:15px 15px 15px 15px;
+	}
+	.fas.fa-map-marker-alt
+	{
+		padding-top: 17px;
+	}
+	#bloc_filtres
+	{
+		display:flex;
+		flex-wrap:wrap;
+		width:100%;	
+		font-weight:bold;
+	}
+	h3
+	{
+		width:100%;
+	}
+	.border_filter
+	{	
+		
+		font-size:1.2em;
+	}
+	.fas.fa-money-bill-wave,.fas.fa-child,.fas.fa-heart,.fas.fa-dog
+	{
+		margin-right:15px;
+		background-color: #DEEBFF;
+		border-radius:20px;
+		padding:14px;
+	}
+	#tips
+	{
+		margin-left:20px;
+		margin-right:20px;
+	}
+	section
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		height:auto;
+		margin-left:0px;
+		margin-right:0px;
+		line-height:1em;
+	}
+	#bloc_hébergements_populaires
+	{
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction:column-reverse;	
+	}
+	#bloc_hébergements
+	{
+		width:100%;
+		height:auto;
+		margin-left:0px;
+		margin-right:0px;
+		background-color:#ffffff;
+	}
+	#bloc_hébergements_photos
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.bloc_1
+	{
+		width:90%;
+		background-color:#ffffff;
+		padding:5px;
+		border-radius:20px;
+		margin:10px auto;
+		box-shadow:6px 6px 6px #d8d8d8;
+		transform:scale(1);
+		transition:all 400ms;
+	}
+	#bloc_populaires
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		height:auto;
+		border-radius:0px;
+		background-color: #f2f2f2;
+		padding-bottom:40px;
+	}
+	.bloc_populaire_1
+	{	
+		display:flex;
+		width:90%;
+		background-color:#ffffff;
+		margin:10px auto;
+		padding:5px;
+		border-radius:20px;
+		box-shadow:6px 6px 6px #d8d8d8;
+		transform:scale(1);
+		transition:all 300ms;
+	}
+	.bloc_populaire_1:hover
+	{
+		transform:scale(1.05);
+		box-shadow:6px 6px 6px #aeaeae;
+	}
+	#bloc_activités
+	{
+		width:90%;
+		height:auto;
+		display:flex;
+		flex-direction:column;
+		margin-left:20px;
+		margin-right:20px;
+	}
+	#bloc_photos_activités
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		height:auto;
+	}
+	#bloc_activités_1,#bloc_activités_2,#bloc_activités_3,#bloc_activités_4
+	{
+		width:90%;
+		height:auto;
+		background-color:#ffffff;
+		border-radius:25px;
+		margin:10px auto;
+	}
+	#bloc_activités_2a,#bloc_activités_2b,#bloc_activités_4a,#bloc_activités_4b
+	{
+		width:100%;
+		height:auto;
+		margin:10px auto;
+	}
+	.imageact_1,.imageact_2,.imageact_3,.imageact_4,.imageact_5,.imageact_6
+	{
+		width:100%;
+		height:134px;
+		object-fit:cover;
+		border-radius:20px 20px 0px 0px;
+	}
+	footer
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		height:auto;
+		background-color: #f2f2f2;
+		margin-top:30px;
+		padding-top:30px;
+	}
+	.bloc_footer_1
+	{
+		width:90%;
+		height:auto;
+		margin:10px auto;
+	}
+	footer p
+	{
+		line-height:1em;
+	}
 }

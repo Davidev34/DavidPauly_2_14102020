@@ -8,25 +8,27 @@
 
 </head>
 	<body>
-		<div id="bloc_page_marginleft50">
-			<header>				
-				<div id="logo_nav">
-					<p class="logo_reservia"><a href="#"><img src="./Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" class="size_reservia"/></a></p>
-					<nav class="héber_activ">
-						<p class="nav_hébergement"><a href="#bloc_hébergements" class="color_hébergement">Hébergements</a></p>
-						<p class="nav_activités"><a href="#bloc_activités" class="color_activités">Activités</a></p>
-					</nav>
-					<p class="nav_sinscrire"><a href="#" class="color_sinscrir">S'inscrire</a></p>
-				</div>
+		<header>				
+			<div id="logo_nav">
+				<p class="logo_reservia"><a href="#"><img src="./Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" class="size_reservia"/></a></p>
+				<nav class="héber_activ">
+					<p class="nav_hébergement"><a href="#bloc_hébergements" class="color_hébergement">Hébergements</a></p>
+					<p class="nav_activités"><a href="#bloc_activités" class="color_activités">Activités</a></p>
+				</nav>
+				<p class="nav_sinscrire"><a href="#" class="color_sinscrir">S'inscrire</a></p>
+			</div>
+			<div class="titre_soustitre">
 				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 				<p>En plein centre ville ou en pleine nature</p>
-			</header>
+			</div>
+		</header>
 			<div id="bloc_recherche">
 					<form method="post" action="traitement.php">
 						<i class="fas fa-map-marker-alt"></i>
 						<label for="ville"></label>
 						<input type="search" name="ville" id="ville" placeholder="Marseille, France"/>
-						<input type="submit" value="Rechercher" class="bouton_rechercher"/>
+						<button class="bouton_rechercher" type="button"><span class="Value_mot">Rechercher</span><i class="fas fa-search"></i></button>
+						
 					</form>								
 				<div id="bloc_filtres">
 					<h3>Filtres</h3>
@@ -160,21 +162,20 @@
 								</div>
 							</div>
 
-				</section>
-		</div>	
+				</section>	
 			<footer>
-				<div id="bloc_footer_1">
+				<div class="bloc_footer_1">
 					<h3><a href="#">A propos</a></h3>
 						<p><a href="#">Fonctionnement du site</a></p>
 						<p><a href="#">Conditions générales de vente</a></p>
 						<p><a href="#">Données et confidentialité</a></p>
 				</div>
-				<div id="bloc_footer_2">
+				<div class="bloc_footer_1">
 					<h3><a href="#">Nos hébergements</a></h3>
 						<p><a href="#">Charte qualité</a></p>
 						<p><a href="#">Soumettre votre hôtel</a></p>
 				</div>
-				<div id="bloc_footer_3">
+				<div class="bloc_footer_1">
 					<h3><a href="#">Assistance</a></h3>
 						<p><a href="#">Centre d'aide</a></p>
 						<p><a href="#">Nous contacter</a></p>
