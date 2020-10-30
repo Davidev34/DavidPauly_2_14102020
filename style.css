@@ -12,7 +12,6 @@ body
 }
 section
 {
-	line-height:0.5em;
 	margin-left:50px;
 	margin-right:50px;
 }
@@ -152,8 +151,9 @@ form
 
 #bloc_filtres
 {
-	display: flex;
-	justify-content: space-between;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
 	width:75%;	
 	font-weight:bold;
 	margin-top:20px;
@@ -165,7 +165,9 @@ form
 	background-color: #ffffff;
 	border:solid #d9d9d9 2px;
 	border-radius:30px;
-    padding-right:15px;
+	padding-right:15px;
+	margin-left:50px;
+	margin-right:50px;
 	transform:scale(1);
 	transition:all 300ms;
 }
@@ -202,12 +204,12 @@ form
 #bloc_hébergements_populaires
 {
 	display:flex;
-	justify-content:space-between;	
+	justify-content:space-between;
 }
 #bloc_hébergements
 {
 	width:65%;
-	height:656px;
+	
     background-color: #f2f2f2;
     border-radius:20px;
 }
@@ -232,8 +234,10 @@ h3
 }
 .bloc_1
 {
+	display:flex;
 	width:25%;
-    height:auto;
+	height:auto;
+	line-height:0.9em;
     background-color:#ffffff;
     padding:5px;
     border-radius:20px;
@@ -271,19 +275,23 @@ h3
 }
 #bloc_populaires
 {
-	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	width:33%;
-	border-radius:20px;
-	background-color: #f2f2f2;
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    background-color: #f2f2f2;
+    border-radius:20px;
 }
 #Titre_logo_pop
 {
 	display:flex;
-	justify-content: space-between;
+	justify-content:space-between;
 	width:80%;
-    margin-left:52px;
+    margin-left:50px;
+}
+.bloc_populaire_1 a
+{
+    display:flex;
+    height:150px;
 }
 .fas.fa-chart-line
 {
@@ -291,14 +299,12 @@ h3
 }
 .logos_etoiles_bleues_pop
 {
-	position:absolute;
-	bottom:0;
-	left:16px;
+	position:relative;
 }
 .bloc_populaire_1
 {	
 	display:flex;
-    width:85%;
+	width:85%;
 	height:auto;
 	background-color:#ffffff;
 	margin:auto;
@@ -315,15 +321,15 @@ h3
 }
 .imagepop_1
 {
-	width:127px;
-    height:114px;
+    width:25%;
+    height:100%;
     object-fit:cover;
     border-radius:20px 0px 0px 20px;
 }
 .text_tarif_stars_pop
 {
-	position:relative;
-    padding-left:16px;
+	padding-left:16px;
+	padding-bottom: 0px;
 }
 #bloc_activités
 {
@@ -456,7 +462,7 @@ footer p:hover
 	height:auto;
 	margin-left:50px;
 }
-@media screen and (max-width:1024px)
+@media screen and (max-width:991px)
 {
 	body
 	{
@@ -561,11 +567,12 @@ footer p:hover
 	}
 	h3
 	{
-		width:100%;
+		width:80%;
 	}
 	.border_filter
 	{	
-		
+		margin-left:0px;
+		margin-right:40px;
 		font-size:1.2em;
 	}
 	.fas.fa-money-bill-wave,.fas.fa-child,.fas.fa-heart,.fas.fa-dog
@@ -577,8 +584,8 @@ footer p:hover
 	}
 	#tips
 	{
-		margin-left:20px;
-		margin-right:20px;
+		margin-left:10px;
+		margin-right:10px;
 	}
 	section
 	{
@@ -610,6 +617,11 @@ footer p:hover
 		display:flex;
 		flex-direction: column;
 	}
+	.Titre_heber_photos
+	{
+		padding-left:20px;
+		padding-top:30px;
+	}
 	.bloc_1
 	{
 		width:90%;
@@ -621,6 +633,10 @@ footer p:hover
 		transform:scale(1);
 		transition:all 400ms;
 	}
+	#Afficher_plus
+	{
+		margin-left:20px;
+	}
 	#bloc_populaires
 	{
 		display:flex;
@@ -630,6 +646,11 @@ footer p:hover
 		border-radius:0px;
 		background-color: #f2f2f2;
 		padding-bottom:40px;
+	}
+	#Titre_logo_pop
+	{
+		width:90%;
+		margin-left:20px;
 	}
 	.bloc_populaire_1
 	{	
@@ -666,7 +687,7 @@ footer p:hover
 	}
 	#bloc_activités_1,#bloc_activités_2,#bloc_activités_3,#bloc_activités_4
 	{
-		width:90%;
+		width:100%;
 		height:auto;
 		background-color:#ffffff;
 		border-radius:25px;
@@ -704,5 +725,143 @@ footer p:hover
 	footer p
 	{
 		line-height:1em;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:991px)
+{
+	body
+	{
+		display:flex;
+		width:100%;
+		margin:auto;
+	}
+	#bloc_recherche
+	{
+		width:100%;
+		height:auto;
+		margin:10px;
+	}
+	form
+	{
+		display:flex;
+		justify-content:space-between;
+		width:50%;
+		height:50px;
+		border:solid #f2f2f2 2px;
+		border-radius:15px;
+		margin:20px;
+	}
+	#bloc_filtres
+	{
+		display:flex;
+		flex-wrap:wrap;
+		width:90%;
+		font-weight:bold;
+		margin:20px;
+	}
+	#bloc_hébergements_populaires
+	{
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction:column;	
+	}
+	#bloc_hébergements_photos
+	{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:row;
+	}
+	.bloc_1
+	{
+		width:40%;
+		background-color:#ffffff;
+		padding:5px;
+		border-radius:20px;
+		margin:10px auto;
+		box-shadow:6px 6px 6px #d8d8d8;
+		transform:scale(1);
+		transition:all 400ms;
+	}
+	#bloc_populaires
+	{
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+		justify-content:space-around;
+		width:100%;
+		border-radius:20px;
+		background-color: #f2f2f2;
+	}
+	.bloc_populaire_1
+	{	
+		display:flex;
+		width:90%;
+		background-color:#ffffff;
+		margin:10px auto;
+		padding:5px;
+		border-radius:20px;
+		box-shadow:6px 6px 6px #d8d8d8;
+		transform:scale(1);
+		transition:all 300ms;
+	}
+	#bloc_activités h3
+	{
+		margin:30px;
+	}
+	#bloc_activités
+	{
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	#bloc_photos_activités
+	{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width:100%;
+		height:auto;
+	}
+	#bloc_activités_1,#bloc_activités_2,#bloc_activités_3,#bloc_activités_4
+	{
+		width:45%;
+		height:500px;
+		background-color:#ffffff;
+		border-radius:25px;
+		margin:10px auto;
+	}
+	#bloc_activités_2a,#bloc_activités_2b,#bloc_activités_4a,#bloc_activités_4b
+	{
+		width:100%;
+		height:250px;
+		margin: auto;
+	}
+	.imageact_1,.imageact_4
+	{
+		width:100%;
+		height:450px;
+		object-fit:cover;
+		border-radius:20px 20px 0px 0px;
+	}
+	.imageact_2,.imageact_3,.imageact_5,.imageact_6
+	{
+		width:100%;
+		height:200px;
+		object-fit:cover;
+		border-radius:20px 20px 0px 0px;
+	}
+	footer
+	{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		height:auto;
+		background-color: #f2f2f2;
+		margin-top:30px;
+		padding-top:30px;
 	}
 }
