@@ -42,6 +42,7 @@ header
 {
 	display:flex;
 	justify-content:space-between;
+	background-color: #ffffff;
 }
 a
 {
@@ -348,6 +349,7 @@ h3
 {
 	font-weight:bold;
 	padding-left:16px;
+	margin:0px;
 }
 .activités__bloc__card1,.activités__bloc__card2,.activités__bloc__card3,.activités__bloc__card4
 {
@@ -407,35 +409,35 @@ h3
 .activités__bloc__card1__img,.activités__bloc__card3__img
 {
 	width:100%;
-    height:92%;
+    height:90%;
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
 }
 .activités__bloc__card2a__img
 {
 	width:100%;
-    height:230px;
+    height:220px;
     object-fit:cover;
 	border-radius:20px 20px 0px 0px;
 }
 .activités__bloc__card2b__img
 {
 	width:100%;
-    height:140px;
+    height:130px;
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
 }
 .activités__bloc__card4a__img
 {
 	width:100%;
-    height:82%;
+    height:80%;
     object-fit:cover;
 	border-radius:20px 20px 0px 0px;
 }
 .activités__bloc__card4b__img
 {
 	width:100%;
-    height:82%;
+    height:80%;
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
 }
@@ -469,7 +471,6 @@ footer p:hover
 		width:auto;
 		margin:0px;
 		padding:0px;
-		border:solid black 2px;
 	}
 	header
 	{
@@ -711,9 +712,13 @@ footer p:hover
 	.activités__bloc__card1__img,.activités__bloc__card2a__img,.activités__bloc__card2b__img,.activités__bloc__card3__img,.activités__bloc__card4a__img,.activités__bloc__card4b__img
 	{
 		width:100%;
-		height:134px;
+		height:145px;
 		object-fit:cover;
 		border-radius:20px 20px 0px 0px;
+	}
+	.activités__bloc__card1__txt,.activités__bloc__card2a__txt,.activités__bloc__card2b__txt,.activités__bloc__card3__txt,.activités__bloc__card4a__txt,.activités__bloc__card4b__txt
+	{
+		margin:10px;
 	}
 	footer
 	{
