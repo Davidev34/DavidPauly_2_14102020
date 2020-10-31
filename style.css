@@ -468,6 +468,8 @@ footer p:hover
 		flex-direction: column;
 		width:auto;
 		margin:0px;
+		padding:0px;
+		border:solid black 2px;
 	}
 	header
 	{
@@ -563,8 +565,9 @@ footer p:hover
 		width:100%;	
 		font-weight:bold;
 	}
-	h3
+	.activités h3
 	{
+		margin-left:20px;
 		width:80%;
 	}
 	.recherche__filtres__btn
@@ -676,19 +679,20 @@ footer p:hover
 	}
 	.activités
 	{
-		width:90%;
+		width:100%;
 		height:auto;
 		display:flex;
 		flex-direction:column;
-		margin-left:20px;
-		margin-right:20px;
+		margin-left:0px;
+		margin-right:0px;
 	}
 	.activités__bloc
 	{
 		display:flex;
 		flex-direction:column;
-		width:100%;
+		width:90%;
 		height:auto;
+		margin:20px auto;
 	}
 	.activités__bloc__card1,.activités__bloc__card2,.activités__bloc__card3,.activités__bloc__card4
 	{
