@@ -152,7 +152,11 @@ form
     padding-left: 13px;
     padding-right: 13px;
 }
-
+.recherche__value
+{
+	position: relative;
+	top:8px;
+}
 .recherche__filtres
 {
 	display:flex;
