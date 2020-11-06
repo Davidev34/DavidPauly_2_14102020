@@ -193,10 +193,7 @@ form
 	border-radius:20px;
 	padding: 12px;
 }
-
-/* Section info tips ------------------------------------------------------------*/
-
-#tips
+.tips
 {
 	display:inline-block;
 	margin-left:50px;
@@ -232,7 +229,7 @@ h3
 {
 	width:65%;
 	background-color: #f2f2f2;
-    border-radius:20px;
+	border-radius:20px;
 }
 .hébergements__Marseille__titre
 {
@@ -590,10 +587,11 @@ footer p:hover
 		margin-right:40px;
 		font-size:1.2em;
 	}
-	#tips
+	.tips
 	{
 		margin-left:10px;
 		margin-right:10px;
+		font-size:1.2em;
 	}
 
 	/* section content hosting & popular ------------------------------------------------------------*/
