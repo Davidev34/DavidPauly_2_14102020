@@ -212,7 +212,7 @@ form
 
 /* Section hébergements Marseille ------------------------------------------------------------*/
 
-h2
+h1
 {
 	padding-top:30px;
 }
@@ -527,14 +527,14 @@ footer p:hover
 		margin-left:20px;
 		margin-right:20px;
 	}
-	h2
+	h1
 	{
 		padding:0px;
 	}
 
 	/* Section recherche ------------------------------------------------------------*/
 	
-	h3
+	h2
 	{
 		width:100%;
 	}
@@ -698,7 +698,7 @@ footer p:hover
 		margin-left:0px;
 		margin-right:0px;
 	}
-	.activités h3
+	.activités h2
 	{
 		margin-left:20px;
 		width:80%;
@@ -784,13 +784,22 @@ footer p:hover
 		height:auto;
 		margin:10px;
 	}
+	.recherche__filtres h3
+	{
+		width:100%;
+	}
 	.recherche__filtres
 	{
 		display:flex;
 		flex-wrap:wrap;
-		width:90%;
+		width:97%;
 		font-weight:bold;
-		margin:20px;
+		margin:5px;
+	}
+	.recherche__filtres__btn
+	{
+		margin-right:0px;
+		font-size:1em;
 	}
 
 	/* section content hosting & popular ------------------------------------------------------------*/
@@ -844,7 +853,7 @@ footer p:hover
 
 	/* Section content activities ------------------------------------------------------------*/
 
-	.activités h3
+	.activités h2
 	{
 		margin:30px;
 	}
