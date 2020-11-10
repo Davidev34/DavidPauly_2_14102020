@@ -563,8 +563,12 @@ footer p:hover
 	}
 	form
 	{
-		width:430px;
+		width:280px;
 		height:auto;
+	}
+	.ville
+	{
+		width:185px;
 	}
 	.recherche__value
 	{
@@ -777,6 +781,10 @@ footer p:hover
 	form
 	{
 		width:430px;
+	}
+	.ville
+	{
+		width:350px;
 	}
 	.recherche
 	{
